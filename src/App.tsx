@@ -1,12 +1,14 @@
 import HeroSection from "./components/HeroSection";
+import HowDoesItWork from "./components/HowDoesItWork";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="w-screen">
+    <>
       <Navbar />
       <HeroSection />
-    </div>
+      <HowDoesItWork />
+    </>
   );
 }
 

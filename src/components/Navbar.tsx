@@ -1,31 +1,15 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { navlinks } from "../constants/links";
+import logoImg from "../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <header className="py-10">
+    <header className="pb-10 pt-7">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <nav className="relative z-50 flex justify-between">
           <a href="/" className="flex items-center space-x-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="aspect-square h-11 text-caribbeangreen-100"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-
-            <div className="text-2xl font-bold font-inter">
-              Solution<span className="text-caribbeangreen-200">Edge</span>
-            </div>
+            <img src={logoImg} alt="logo" className="h-20" />
           </a>
 
           <ul className="flex my-auto gap-[3rem]">
