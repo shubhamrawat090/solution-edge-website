@@ -1,0 +1,4 @@
+#1 
+PROBLEM: Trying to render svg's from a .ts file to react component using map. SVGs invisible.
+
+SOLUTION: change className to class for some reason dangerouslySetInnerHTML={{ __html: svg }} was changing className to classname and nothing was working. Maybe because className is a tsx reserved keyword
