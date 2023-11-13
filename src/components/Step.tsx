@@ -1,8 +1,8 @@
-import * as Icons from "react-icons/fa";
+import { FaIcons } from "../utils/iconUtils";
 
 // Utility function to validate the icon name
-const isValidIcon = (icon: string): icon is keyof typeof Icons => {
-  return icon in Icons;
+const isValidIcon = (icon: string): icon is keyof typeof FaIcons => {
+  return icon in FaIcons;
 };
 
 interface StepProps {
@@ -17,7 +17,7 @@ const Step = ({ title, icon, text }: StepProps) => {
     return <div>Invalid Icon</div>;
   }
 
-  const SelectedIcon = Icons[icon as keyof typeof Icons]; // Type assertion to access Icons object
+  const SelectedIcon = FaIcons[icon as keyof typeof FaIcons]; // Type assertion to access Icons object
 
   return (
     <div className="flex flex-col cursor-pointer">
