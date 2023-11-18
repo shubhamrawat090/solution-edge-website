@@ -1,5 +1,5 @@
 import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment } from "react";
 import { navlinks } from "../constants/links";
 import logoImg from "../assets/logo.png";
 
