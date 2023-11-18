@@ -1,11 +1,12 @@
 import { Disclosure } from "@headlessui/react";
 import { termsArray } from "../constants/termsAndConditions";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import { separateNextline } from "../utils/stringManipulation";
 
 const TermsAndConditions = () => {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16">
-      <h1 className="text-center mt-8 mb-10 text-3xl tracking-tight text-pure-greys-900 sm:text-4xl">
+      <h1 className="text-center mb-10 text-3xl tracking-tight text-pure-greys-900 sm:text-4xl">
         General Terms and Conditions for Services
       </h1>
       {termsArray.map((term) => (
@@ -31,9 +32,10 @@ const TermsAndConditions = () => {
                     <li
                       key={pidx}
                       className=" text-sm tracking-tight text-pure-greys-700"
-                    >
-                      {point}
-                    </li>
+                      dangerouslySetInnerHTML={{
+                        __html: separateNextline(point),
+                      }}
+                    ></li>
                   ) : (
                     // Render object points
                     <li
@@ -41,18 +43,27 @@ const TermsAndConditions = () => {
                       className=" text-sm tracking-tight text-pure-greys-700"
                     >
                       <div className="flex gap-x-3 ">
-                        <span>{point.pid}</span> <span>{point.ptext}</span>
+                        <span>{point.pid}</span>{" "}
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: separateNextline(point.ptext),
+                          }}
+                        ></span>
                       </div>
 
                       {point.psubtexts && (
-                        <ul className="mt-2 space-y-2">
+                        <ul className="mt-2 space-y-1">
                           {point.psubtexts.map((subpoint) => (
                             <li
                               key={subpoint.psid}
                               className="ml-6 flex gap-x-2 "
                             >
                               <span>({subpoint.psid})</span>{" "}
-                              <span>{subpoint.pstext}</span>
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: separateNextline(subpoint.pstext),
+                                }}
+                              ></span>
                             </li>
                           ))}
                         </ul>

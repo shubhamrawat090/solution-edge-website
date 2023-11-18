@@ -26,10 +26,10 @@ const Footer = () => {
     <footer>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="py-16">
-          <div className="w-max mx-auto">
-            <Link to={"/"}>
+          <div className="w-max mx-auto cursor-pointer">
+            <a onClick={() => handleNavigation("navbar")}>
               <img src={logoImg} alt="logo" className="h-16" />
-            </Link>
+            </a>
           </div>
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex flex-col sm:flex-row justify-center gap-x-6 gap-y-4">

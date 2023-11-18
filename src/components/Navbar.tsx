@@ -5,7 +5,7 @@ import logoImg from "../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <header className="pb-10 pt-7">
+    <header className="pb-10 pt-7" id="navbar">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <nav className="relative z-50 flex justify-between">
           <a href="/" className="flex items-center space-x-2">
