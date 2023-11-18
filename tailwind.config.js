@@ -16,9 +16,6 @@ export default {
       white: "#fff",
       black: "#000",
       transparent: "#ffffff00",
-      logoLight: {
-        100: "#4aaf50",
-      },
       richblack: {
         5: "#F1F2FF",
         25: "#DBDDEA",
@@ -119,6 +116,7 @@ export default {
       },
       "pure-greys": {
         5: "#F9F9F9",
+        10: "#F0F0F0",
         25: "#E2E2E2",
         50: "#CCCCCC",
         100: "#B5B5B5",

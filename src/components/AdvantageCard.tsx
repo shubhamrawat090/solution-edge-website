@@ -21,7 +21,7 @@ const AdvantageCard = ({ heading, text, icon }: AdvantageCardProps) => {
   }
 
   return (
-    <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-4 rounded-md">
+    <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-4 rounded-md bg-white">
       <div className="w-max p-1 rounded-lg bg-caribbeangreen-400 text-white mx-auto sm:ml-0 text-[2.25rem]">
         <SelectedIcon />
       </div>
