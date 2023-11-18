@@ -2,13 +2,20 @@ import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { navlinks } from "../constants/links";
 import logoImg from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
+import { handleNavigation } from "../services/navigationService";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <header className="pb-10 pt-7" id="navbar">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <nav className="relative z-50 flex justify-between">
-          <a href="/" className="flex items-center space-x-2">
+          <a
+            onClick={() => handleNavigation(navigate, "navbar")}
+            className="flex items-center space-x-2 cursor-pointer"
+          >
             <img src={logoImg} alt="logo" className="h-20" />
           </a>
 

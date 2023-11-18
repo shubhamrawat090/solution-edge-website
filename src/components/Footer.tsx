@@ -1,33 +1,18 @@
 import logoImg from "../assets/logo.png";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { handleNavigation } from "../services/navigationService";
 
 const Footer = () => {
   const navigate = useNavigate();
-
-  const handleNavigation = (id: string) => {
-    // Check if home component exists in the DOM
-    const homeComponent = document.getElementById("home");
-    if (!homeComponent) {
-      // If home component doesn't exist, redirect to home first
-      navigate("/");
-    }
-    // Delay navigation to ensure the home component is rendered before navigating to the child div
-    setTimeout(() => {
-      const childElement = document.getElementById(id);
-      if (childElement) {
-        childElement.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100); // Adjust the delay time as needed
-  };
 
   return (
     <footer>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="py-16">
           <div className="w-max mx-auto cursor-pointer">
-            <a onClick={() => handleNavigation("navbar")}>
+            <a onClick={() => handleNavigation(navigate, "navbar")}>
               <img src={logoImg} alt="logo" className="h-16" />
             </a>
           </div>
@@ -35,22 +20,28 @@ const Footer = () => {
             <div className="-my-1 flex flex-col sm:flex-row justify-center gap-x-6 gap-y-4">
               <a
                 className="inline-block rounded-lg px-2 py-1 text-sm text-pure-greys-600 hover:bg-pure-greys-10 hover:text-pure-greys-900 cursor-pointer text-center"
-                onClick={() => handleNavigation("howDoesItWork")}
+                onClick={() => handleNavigation(navigate, "howDoesItWork")}
               >
                 How does it work?
               </a>
               <a
                 className="inline-block rounded-lg px-2 py-1 text-sm text-pure-greys-600 hover:bg-pure-greys-10 hover:text-pure-greys-900 cursor-pointer text-center"
-                onClick={() => handleNavigation("advantages")}
+                onClick={() => handleNavigation(navigate, "advantages")}
               >
                 Advantages of our service
               </a>
-              <Link
+              <a
                 className="inline-block rounded-lg px-2 py-1 text-sm text-pure-greys-600 hover:bg-pure-greys-10 hover:text-pure-greys-900 cursor-pointer text-center"
-                to={"/terms-and-conditions"}
+                onClick={() =>
+                  handleNavigation(
+                    navigate,
+                    "terms-and-conditions",
+                    "terms-and-conditions"
+                  )
+                }
               >
                 Terms and Conditions
-              </Link>
+              </a>
             </div>
           </nav>
         </div>

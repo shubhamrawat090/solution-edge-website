@@ -5,7 +5,10 @@ import { separateNextline } from "../utils/stringManipulation";
 
 const TermsAndConditions = () => {
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16">
+    <div
+      className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 -mt-4 pt-4"
+      id="terms-and-conditions"
+    >
       <h1 className="text-center mb-10 text-3xl tracking-tight text-pure-greys-900 sm:text-4xl">
         General Terms and Conditions for Services
       </h1>
@@ -14,7 +17,7 @@ const TermsAndConditions = () => {
           as="div"
           key={term.id}
           className={
-            "mb-2 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] text-justify"
+            "mb-3 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] text-justify"
           }
         >
           {({ open }) => (
