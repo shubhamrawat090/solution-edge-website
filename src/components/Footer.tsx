@@ -32,21 +32,21 @@ const Footer = () => {
             </Link>
           </div>
           <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
+            <div className="-my-1 flex flex-col sm:flex-row justify-center gap-x-6 gap-y-4">
               <a
-                className="inline-block rounded-lg px-2 py-1 text-sm text-pure-greys-600 hover:bg-pure-greys-10 hover:text-pure-greys-900 cursor-pointer"
+                className="inline-block rounded-lg px-2 py-1 text-sm text-pure-greys-600 hover:bg-pure-greys-10 hover:text-pure-greys-900 cursor-pointer text-center"
                 onClick={() => handleNavigation("howDoesItWork")}
               >
                 How does it work?
               </a>
               <a
-                className="inline-block rounded-lg px-2 py-1 text-sm text-pure-greys-600 hover:bg-pure-greys-10 hover:text-pure-greys-900 cursor-pointer"
+                className="inline-block rounded-lg px-2 py-1 text-sm text-pure-greys-600 hover:bg-pure-greys-10 hover:text-pure-greys-900 cursor-pointer text-center"
                 onClick={() => handleNavigation("advantages")}
               >
                 Advantages of our service
               </a>
               <Link
-                className="inline-block rounded-lg px-2 py-1 text-sm text-pure-greys-600 hover:bg-pure-greys-10 hover:text-pure-greys-900 cursor-pointer"
+                className="inline-block rounded-lg px-2 py-1 text-sm text-pure-greys-600 hover:bg-pure-greys-10 hover:text-pure-greys-900 cursor-pointer text-center"
                 to={"/terms-and-conditions"}
               >
                 Terms and Conditions

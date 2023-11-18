@@ -6,7 +6,7 @@ const HowDoesItWork = () => {
     <section
       id="howDoesItWork"
       aria-label="Working process explanation"
-      className="relative overflow-hidden bg-caribbeangreen-400 pb-28 pt-20 sm:py-32"
+      className="relative overflow-hidden bg-caribbeangreen-400 pb-28 pt-20 sm:py-32 min-h-screen"
     >
       <div className="max-w-2xl mx-auto text-center xl:max-w-[80%]">
         <h2 className="font-medium text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
