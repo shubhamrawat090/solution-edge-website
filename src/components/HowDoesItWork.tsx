@@ -9,7 +9,7 @@ const HowDoesItWork = () => {
       className="relative overflow-hidden bg-caribbeangreen-400 pb-28 pt-20 sm:py-32"
     >
       <div className="max-w-2xl mx-auto text-center xl:max-w-[80%]">
-        <h2 className="font-inter font-medium text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
+        <h2 className="font-medium text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
           {heading}
         </h2>
         <p className="max-w-[850px] px-2 mx-auto mt-6 text-xl text-center tracking-tight text-caribbeangreen-5">

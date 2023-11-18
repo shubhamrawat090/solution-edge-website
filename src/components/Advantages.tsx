@@ -6,7 +6,7 @@ const Advantages = () => {
     <section id="advantages" className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-inter text-3xl tracking-tight text-pure-greys-900 sm:text-4xl">
+          <h2 className="text-3xl tracking-tight text-pure-greys-900 sm:text-4xl">
             Advantages of our service
           </h2>
           <p className="mt-4 text-lg tracking-tight text-pure-greys-700">

@@ -1,16 +1,18 @@
-import Advantages from "./components/Advantages";
-import Footer from "./components/Footer";
-import HeroSection from "./components/HeroSection";
-import HowDoesItWork from "./components/HowDoesItWork";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
+import TermsAndConditions from "./components/TermsAndConditions";
 
 function App() {
   return (
     <>
       <Navbar />
-      <HeroSection />
-      <HowDoesItWork />
-      <Advantages />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+      </Routes>
       <Footer />
     </>
   );
