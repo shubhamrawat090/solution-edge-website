@@ -527,7 +527,7 @@ export const termsArray: termType[] = [
       {
         pid: 9.4,
         ptext:
-          "Any claim by the Client against Solution Edge must be made by registered letter with acknowledgement of receipt within ninety (30) days after the work completed when Client becomes aware of any circumstances giving rise to any such claim. Failure to give such notice of claim within ninety(30) days shall constitute a bar or irrevocable waiver to any claim, regardless of the factual and legal ground of the claim",
+          "Any claim by the Client against Solution Edge must be made by registered letter with acknowledgement of receipt within thirty(30) days after the work completed when Client becomes aware of any circumstances giving rise to any such claim. Failure to give such notice of claim within thirty(30) days shall constitute a bar or irrevocable waiver to any claim, regardless of the factual and legal ground of the claim",
       },
       {
         pid: 9.5,
