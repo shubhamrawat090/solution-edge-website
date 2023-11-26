@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { email } from "../constants/contact-info";
+
 const HeroSection = () => {
   return (
     <main className="min-h-[85vh]">
@@ -21,22 +24,22 @@ const HeroSection = () => {
           Services.
         </p>
         <div className="mt-20 flex justify-center gap-x-6">
-          <a
-            className="transition-all group inline-flex flex-col items-center justify-center rounded-md py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-caribbeangreen-400 text-white hover:bg-caribbeangreen-500"
-            href="mailto:solution.edge.info@gmail.com"
+          <Link
+            to={`mailto:${email}`}
             target="_blank"
+            className="transition-all group inline-flex flex-col items-center justify-center rounded-md py-2 px-4 text-sm focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-caribbeangreen-400 text-white hover:bg-caribbeangreen-500"
           >
             <div className="font-semibold">I AM A BUYER</div>
             <div className="font-normal">AND NEED MULTIPLE QUOTES</div>
-          </a>
-          <a
-            className="transition-all group inline-flex flex-col ring-1 items-center justify-center rounded-md py-2 px-4 text-sm focus:outline-none ring-pure-greys-200 text-pure-greys-700 hover:text-pure-greys-900 hover:ring-pure-greys-600 active:bg-pure-greys-25"
-            href="mailto:solution.edge.info@gmail.com"
+          </Link>
+          <Link
+            to={`mailto:${email}`}
             target="_blank"
+            className="transition-all group inline-flex flex-col ring-1 items-center justify-center rounded-md py-2 px-4 text-sm focus:outline-none ring-pure-greys-200 text-pure-greys-700 hover:text-pure-greys-900 hover:ring-pure-greys-600 active:bg-pure-greys-25"
           >
             <div className="font-semibold">I AM A INSPECTOR COMPANY</div>
             <div className="font-normal">OR AN INSPECTOR</div>
-          </a>
+          </Link>
         </div>
       </div>
     </main>

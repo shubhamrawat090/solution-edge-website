@@ -1,8 +1,9 @@
 import logoImg from "../assets/logo.png";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { handleNavigation } from "../services/navigationService";
+import { email } from "../constants/contact-info";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -47,12 +48,16 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center border-t border-pure-greys-400/10 py-10 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
-            <a href="https://wa.me/+918800556980" target="_blank">
+            <Link
+              to="https://wa.me/+918800556980"
+              target="_blank"
+              title="WhatsApp Us"
+            >
               <IoLogoWhatsapp className="h-6 w-6 fill-pure-greys-400 hover:fill-[#25D366]" />
-            </a>
-            <a href="mailto:solution.edge.info@gmail.com" target="_blank">
+            </Link>
+            <Link to={`mailto:${email}`} target="_blank" title="Email Us">
               <MdEmail className="h-6 w-6 fill-pure-greys-400 hover:fill-[#C71610]" />
-            </a>
+            </Link>
           </div>
           <p className="mt-6 text-sm text-pure-greys-500 sm:mt-0">
             Copyright @ 2023 Solution Edge. All rights reserved.

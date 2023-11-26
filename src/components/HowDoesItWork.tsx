@@ -1,7 +1,14 @@
+import { Link } from "react-router-dom";
 import { processSteps, heading, subHeading } from "../constants/howDoesItWork";
 import Step from "./Step";
+import { email } from "../constants/contact-info";
 
 const HowDoesItWork = () => {
+  const handleMailTo = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.open(`mailto:${email}`, "_blank");
+  };
+
   return (
     <section
       id="howDoesItWork"
@@ -28,13 +35,13 @@ const HowDoesItWork = () => {
         </div>
 
         <div>
-          <a
+          <Link
+            to="#"
             className="group cursor-pointer inline-flex items-center justify-center rounded-full py-4 px-8 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-white text-slate-900 hover:bg-caribbeangreen-5 active:bg-caribbeangreen-25 active:text-slate-600 focus-visible:outline-white mt-20"
-            href="mailto:solution.edge.info@gmail.com"
-            target="_blank"
+            onClick={handleMailTo}
           >
-            Need an inspection quote?
-          </a>
+            Need and inspection quote?
+          </Link>
         </div>
       </div>
     </section>
