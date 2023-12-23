@@ -68,7 +68,7 @@ const TestingServices = () => {
           <IoLogoWhatsapp
             className={`${btnTransition} h-6 w-6 fill-pure-greys-400 group-hover:fill-white`}
           />
-          Whatsapp Us
+          WhatsApp Us
         </Link>
 
         <Link
