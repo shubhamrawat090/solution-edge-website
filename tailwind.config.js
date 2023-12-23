@@ -4,7 +4,7 @@ export default {
   content: ["./src/**/*.{html,js,jsx,tsx,ts}"],
   theme: {
     fontFamily: {
-      inter: ["Inter", "sans-serif"],
+      inter: ["Poppins", "sans-serif"],
     },
     extend: {
       maxWidth: {

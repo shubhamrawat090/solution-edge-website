@@ -9,7 +9,7 @@ const TermsAndConditions = () => {
       className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 -mt-4 pt-4"
       id="terms-and-conditions"
     >
-      <h1 className="text-center mb-10 text-3xl tracking-tight text-pure-greys-900 sm:text-4xl">
+      <h1 className="text-center mb-10 text-3xl font-semibold tracking-tight text-pure-greys-900 sm:text-4xl">
         General Terms and Conditions for Services
       </h1>
       {termsArray.map((term) => (
