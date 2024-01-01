@@ -5,6 +5,17 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { classNames } from "../utils/stringManipulation";
+import emailjs from "@emailjs/browser";
+import { useEffect } from "react";
+
+const env = import.meta.env;
+const {
+  VITE_EMAILJS_SERVICE_ID,
+  VITE_EMAILJS_TEMPLATE_ID,
+  VITE_EMAILJS_PUBLIC_KEY,
+  VITE_COMPANY_EMAIL,
+  VITE_COMPANY_NAME,
+} = env;
 
 const schema = z.object({
   name: z.string().min(1, { message: "Name is required." }),
@@ -30,6 +41,8 @@ const ContactUs = () => {
   const {
     register,
     handleSubmit,
+    reset,
+    formState,
     formState: { errors },
   } = useForm<Inputs>({
     defaultValues: {
@@ -45,13 +58,42 @@ const ContactUs = () => {
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     console.log(data);
     const emailObj = {
-      contact_number: data.phoneNumber,
-      user_name: data.name,
-      user_email: data.email,
-      message: data.message,
-    }
-    console.log("emailObj: ", emailObj)
+      sender_phone: data.phoneNumber,
+      sender_name: data.name,
+      sender_email: data.email,
+      sender_message: data.message,
+      reply_to: data.email,
+      receiver_email: VITE_COMPANY_EMAIL,
+      receiver_name: VITE_COMPANY_NAME,
+    };
+    console.log("emailObj: ", emailObj);
+    const serviceID = VITE_EMAILJS_SERVICE_ID;
+    const templateID = VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = VITE_EMAILJS_PUBLIC_KEY;
+
+    emailjs.send(serviceID, templateID, emailObj, publicKey).then(
+      (result) => {
+        console.log("result: ", result);
+      },
+      (error) => {
+        console.log("error: ", error.text);
+      }
+    );
   };
+
+  useEffect(() => {
+    if (formState.isSubmitSuccessful) {
+      reset(
+        {
+          name: "",
+          phoneNumber: "",
+          email: "",
+          message: "",
+        },
+        { keepDefaultValues: true }
+      );
+    }
+  }, [formState, reset]);
 
   return (
     <section id="contact-us">

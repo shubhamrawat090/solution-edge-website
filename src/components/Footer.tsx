@@ -4,15 +4,12 @@ import { MdEmail } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import { handleNavigation } from "../services/navigationService";
 import { email } from "../constants/contact-info";
-import ContactUs from "./ContactUs";
 
 const Footer = () => {
   const navigate = useNavigate();
 
   return (
     <footer>
-      <ContactUs />
-
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="py-16">
           <div className="w-max mx-auto cursor-pointer">
