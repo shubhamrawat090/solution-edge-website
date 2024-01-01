@@ -66,7 +66,7 @@ const ContactUs = () => {
       receiver_email: VITE_COMPANY_EMAIL,
       receiver_name: VITE_COMPANY_NAME,
     };
-    console.log("emailObj: ", emailObj);
+    // console.log("emailObj: ", emailObj);
     const serviceID = VITE_EMAILJS_SERVICE_ID;
     const templateID = VITE_EMAILJS_TEMPLATE_ID;
     const publicKey = VITE_EMAILJS_PUBLIC_KEY;
