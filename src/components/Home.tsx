@@ -1,4 +1,5 @@
 import Advantages from "./Advantages";
+import ContactUs from "./ContactUs";
 import HeroSection from "./HeroSection";
 import HowDoesItWork from "./HowDoesItWork";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <HeroSection />
       <HowDoesItWork />
       <Advantages />
+      <ContactUs />
     </div>
   );
 };
