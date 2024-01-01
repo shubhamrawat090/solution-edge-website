@@ -7,6 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { classNames } from "../utils/stringManipulation";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const env = import.meta.env;
 const {
@@ -55,7 +56,8 @@ const ContactUs = () => {
     mode: "onChange",
   });
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    toast.loading("Sending your message. Please wait.");
     console.log(data);
     const emailObj = {
       sender_phone: data.phoneNumber,
@@ -66,19 +68,32 @@ const ContactUs = () => {
       receiver_email: VITE_COMPANY_EMAIL,
       receiver_name: VITE_COMPANY_NAME,
     };
-    // console.log("emailObj: ", emailObj);
+    console.log("emailObj: ", emailObj);
     const serviceID = VITE_EMAILJS_SERVICE_ID;
     const templateID = VITE_EMAILJS_TEMPLATE_ID;
     const publicKey = VITE_EMAILJS_PUBLIC_KEY;
 
-    emailjs.send(serviceID, templateID, emailObj, publicKey).then(
-      (result) => {
-        console.log("result: ", result);
-      },
-      (error) => {
-        console.log("error: ", error.text);
-      }
-    );
+    try {
+      const result = await emailjs.send(
+        serviceID,
+        templateID,
+        emailObj,
+        publicKey
+      );
+      console.log("result: ", result);
+      toast.dismiss();
+      toast.success(
+        `Your message has been sent succesfully. 
+      We will get back to you soon.`
+      );
+    } catch (error: unknown) {
+      console.error("error: ", error);
+      toast.dismiss();
+      toast.error(
+        `Sorry your message was not sent successfully. 
+          Please click the icons on the bottom of the website to contact us instead.`
+      );
+    }
   };
 
   useEffect(() => {
@@ -97,6 +112,7 @@ const ContactUs = () => {
 
   return (
     <section id="contact-us">
+      <Toaster />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 p-6">
         <h1 className="text-center text-pure-greys-600 text-4xl font-bold">
           Get In Touch
