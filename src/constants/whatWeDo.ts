@@ -686,7 +686,7 @@ export const replaceTextWithSpan = (
 ) => {
   const regex = /\{([^}]+)\}/g;
 
-  const replacedString = inputString.replace(regex, (match, group) => {
+  const replacedString = inputString.replace(regex, (_, group) => {
     return `<span class="${className}">${group}</span>`;
   });
 
