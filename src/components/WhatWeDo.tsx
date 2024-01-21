@@ -14,7 +14,6 @@ const WhatWeDo = () => {
   const navigate = useNavigate();
   const { type } = useParams();
   const [data, setData] = useState<WhatWeDoType>(null);
-  console.log(type);
   useEffect(() => {
     const data = getWhatWeDo(type);
     if (!data) {

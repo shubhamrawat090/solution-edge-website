@@ -58,7 +58,6 @@ const ContactUs = () => {
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     toast.loading("Sending your message. Please wait.");
-    console.log(data);
     const emailObj = {
       sender_phone: data.phoneNumber,
       sender_name: data.name,
