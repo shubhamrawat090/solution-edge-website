@@ -1,4 +1,4 @@
-import logoImg from "../assets/logo.png";
+import logoImg from "../assets/logo.webp";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="py-16">
           <div className="w-max mx-auto cursor-pointer">
-            <a onClick={() => handleNavigation(navigate, "navbar")}>
+            <a onClick={() => handleNavigation(navigate, "home")}>
               <img src={logoImg} alt="logo" className="h-16" />
             </a>
           </div>

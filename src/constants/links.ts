@@ -2,72 +2,91 @@ export const navlinks = [
   {
     id: 1,
     label: "Inspection",
+    to: "what-we-do/inspections-and-supply-chain-services",
     links: [
       {
-        to: "#option1",
-        label: "Option 1",
+        id: "ISC_1",
+        label: "Inspections",
       },
       {
-        to: "#option2",
-        label: "Option 2",
-      },
-      {
-        to: "#option3",
-        label: "Option 3",
+        id: "ISC_2",
+        label: "Supply Chain Services",
       },
     ],
   },
   {
     id: 2,
     label: "Testing",
+    to: "what-we-do/testing-and-laboratory-management-system-services",
     links: [
       {
-        to: "#option1",
-        label: "Option 1",
+        id: "testing-and-laboratory-management-system-services",
+        label: "Testing Services",
       },
       {
-        to: "#option2",
-        label: "Option 2",
-      },
-      {
-        to: "#option3",
-        label: "Option 3",
+        id: "TAMS_1",
+        label: "Laboratory Management",
       },
     ],
   },
   {
     id: 3,
     label: "Certification",
+    to: "what-we-do/certifications-training-and-advisory-services",
     links: [
       {
-        to: "#option1",
-        label: "Option 1",
+        id: "CTAS_1",
+        label: "Certifications",
       },
       {
-        to: "#option2",
-        label: "Option 2",
+        id: "CTAS_3",
+        label: "Training",
       },
       {
-        to: "#option3",
-        label: "Option 3",
+        id: "CTAS_4",
+        label: "Advisory Services",
       },
     ],
   },
   {
     id: 4,
-    label: "Consultancy",
+    label: "Drone Supply",
+    to: "what-we-do/supply-of-drone-services",
     links: [
       {
-        to: "#option1",
-        label: "Option 1",
+        id: "supply-of-drone-services",
+        label: "Supply of drone services",
       },
       {
-        to: "#option2",
-        label: "Option 2",
+        id: "SODS_2",
+        label: "Why Drone Service?",
       },
       {
-        to: "#option3",
-        label: "Option 3",
+        id: "SODS_3",
+        label: "Implementation Plan",
+      },
+      {
+        id: "SODS_4",
+        label: "Benefits",
+      },
+    ],
+  },
+  {
+    id: 5,
+    label: "Business Support",
+    to: "what-we-do/business-support",
+    links: [
+      {
+        id: "business-support",
+        label: "Business Support",
+      },
+      {
+        id: "BS_2",
+        label: "Supply Chain Assurance",
+      },
+      {
+        id: "BS_2.4",
+        label: "Our Offerings",
       },
     ],
   },

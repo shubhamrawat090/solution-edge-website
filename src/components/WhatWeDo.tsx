@@ -76,6 +76,7 @@ const WhatWeDo = () => {
             .map((text) => (
               <p
                 key={text.id}
+                id={text.id}
                 className={classNames(paraStyles)}
                 dangerouslySetInnerHTML={{
                   __html: replaceTextWithSpan(text.text, underlinedStyles),
@@ -85,7 +86,7 @@ const WhatWeDo = () => {
 
         {data.subtopics &&
           data.subtopics.map((subtopic) => (
-            <div key={subtopic.id}>
+            <div key={subtopic.id} id={subtopic.id}>
               <h2 className="text-2xl font-bold mt-8 mb-4 text-center md:text-left">
                 {!subtopic.link && subtopic.heading}
                 {subtopic.link && (
@@ -101,7 +102,7 @@ const WhatWeDo = () => {
               </h2>
 
               {subtopic.paragraphs.map((subpara) => (
-                <div key={subpara.id}>
+                <div key={subpara.id} id={subpara.id}>
                   {!subpara.subtexts && (
                     <p
                       className={classNames(paraStyles)}
@@ -132,6 +133,7 @@ const WhatWeDo = () => {
                               "mb-2 font-normal"
                             )}
                             key={subtext.id}
+                            id={subtext.id}
                             dangerouslySetInnerHTML={{
                               __html: replaceTextWithSpan(
                                 subtext.text,
@@ -155,6 +157,7 @@ const WhatWeDo = () => {
           {data.cards.map((card, index) => (
             <div
               key={card.id}
+              id={card.id}
               className={classNames(
                 "p-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg text-center md:text-left",
                 `${index % 2 === 0 ? "bg-yellow-5" : ""}`
