@@ -23,7 +23,12 @@ const Navbar = () => {
             onClick={() => handleNavigation(navigate, "home")}
             className="flex items-center space-x-2 cursor-pointer shrink-0"
           >
-            <img src={logoImg} alt="logo" className="h-16 md:h-20" />
+            <img
+              src={logoImg}
+              alt="logo"
+              className="h-16 md:h-20"
+              loading="lazy"
+            />
           </a>
 
           <div className="hidden lg:flex justify-between align-center my-auto gap-2 lg:gap-5">

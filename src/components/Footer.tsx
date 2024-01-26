@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="py-16">
           <div className="w-max mx-auto cursor-pointer">
             <a onClick={() => handleNavigation(navigate, "home")}>
-              <img src={logoImg} alt="logo" className="h-16" />
+              <img src={logoImg} alt="logo" className="h-16" loading="lazy" />
             </a>
           </div>
           <nav className="mt-10 text-sm" aria-label="quick links">

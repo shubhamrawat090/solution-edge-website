@@ -177,6 +177,7 @@ const WhatWeDo = () => {
                     className="w-full"
                     src={getImage(card.image)}
                     alt={card.image}
+                    loading="lazy"
                   />
                 </>
               )}
