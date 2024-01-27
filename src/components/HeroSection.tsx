@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { email } from "../constants/contact-info";
+import { handleNavigation } from "../services/navigationService";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <main className="min-h-[85vh]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-80 pt-20 text-center lg:pt-32">
@@ -24,14 +26,13 @@ const HeroSection = () => {
           Services.
         </p>
         <div className="mt-20 flex justify-center gap-x-6">
-          <Link
-            to={`mailto:${email}`}
-            target="_blank"
+          <button
+            onClick={() => handleNavigation(navigate, "contact-us")}
             className="transition-all group inline-flex flex-col items-center justify-center rounded-md py-2 px-4 text-sm focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-caribbeangreen-400 text-white hover:bg-caribbeangreen-500"
           >
-            <div className="font-semibold">I AM A BUYER</div>
-            <div className="font-normal">AND NEED MULTIPLE QUOTES</div>
-          </Link>
+            <div className="font-semibold">CONTACT US</div>
+            <div className="font-normal">Get In Touch</div>
+          </button>
           <Link
             to={`mailto:${email}`}
             target="_blank"

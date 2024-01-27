@@ -17,18 +17,21 @@ const AdvantageCard = ({ heading, text, icon }: AdvantageCardProps) => {
   ] as React.ComponentType;
 
   if (!SelectedIcon) {
+    console.log(heading, icon);
     return <div>Icon not found</div>; // Handle the case where the icon is not found
   }
 
   return (
-    <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-4 rounded-md bg-white">
-      <div className="w-max p-1 rounded-lg bg-caribbeangreen-400 text-white mx-auto sm:ml-0 text-[2.25rem]">
+    <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-4 rounded-md bg-white h-full w-full">
+      <div className="w-max p-1 rounded-lg bg-caribbeangreen-400 text-white mx-auto md:ml-0 text-[2.25rem]">
         <SelectedIcon />
       </div>
-      <h3 className="mt-6 text-xl font-medium text-caribbeangreen-600">
+      <h3 className="mt-6 text-center md:text-left text-xl font-medium text-caribbeangreen-600">
         {heading}
       </h3>
-      <p className="mt-2 font-display text-md text-pure-greys-900">{text}</p>
+      <p className="mt-2 text-center md:text-left font-display text-md text-pure-greys-900">
+        {text}
+      </p>
     </div>
   );
 };

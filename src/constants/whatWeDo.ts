@@ -79,15 +79,15 @@ const InspectionsAndSupplyChainServices: WhatWeDoType = {
           subtexts: [
             {
               id: "ISC_2.4.1",
-              text: "{Brand audits:} ensure that your brand is correctly represented along the full supply and value chains.",
+              text: "<strong>Brand audits:</strong> ensure that your brand is correctly represented along the full supply and value chains.",
             },
             {
               id: "ISC_2.4.2",
-              text: "{Supplier audits:} maintain best practices while minimizing business disruption.",
+              text: "<strong>Supplier audits:</strong> maintain best practices while minimizing business disruption.",
             },
             {
               id: "ISC_2.4.3",
-              text: "{Industry/product stewardship audits:} ensure that member companies adhere to your program's benchmarks.",
+              text: "<strong>Industry/product stewardship audits:</strong> ensure that member companies adhere to your program's benchmarks.",
             },
           ],
         },
@@ -125,7 +125,7 @@ const TestingAndLaboratoryManagementSystemServices: WhatWeDoType = {
       paragraphs: [
         {
           id: "TAMS_1.1",
-          text: "We know our clients need more than reliable analytical results; they need {practical and innovative solutions} that will contribute to make the quality products. {Adding to} analytical testing and consulting, we have broadened our scope of scientific specialties into chemistry, education, certification, research, labeling, and sensory in order to offer a {complete suite of services} to meet our {customers' needs.}",
+          text: "We know our clients need more than reliable analytical results; they need {practical and innovative solutions} that will contribute to make the quality products. Adding to analytical testing and consulting, we have broadened our scope of scientific specialties into chemistry, education, certification, research, labeling, and sensory in order to offer a {complete suite of services} to meet our {customers' needs.}",
         },
         {
           id: "TAMS_1.2",
@@ -141,7 +141,7 @@ const TestingAndLaboratoryManagementSystemServices: WhatWeDoType = {
         },
         {
           id: "TAMS_1.5",
-          text: "To give consistent and reliable results, we share the same method all over i.e. Quality management system accredited under the recognized ISO 17025 standard and other required approvals and certifications. Full sample-to-result traceability.",
+          text: "To give consistent and reliable results, we share the same method all over i.e. Quality management system accredited under the recognized {ISO 17025 standard} and other required approvals and certifications. Full sample-to-result traceability.",
         },
         {
           id: "TAMS_1.6",
@@ -247,7 +247,7 @@ const CertificationsTrainingAndAdvisoryServices: WhatWeDoType = {
         },
         {
           id: "CTAS_2.4",
-          text: "We operate with the utmost competence and trust, delivering the highest quality service at global and local levels. Transparency, independence and integrity are key to delivering our services. We comply with the highest standards to support maintaining your accreditations, so you can be sure of our competence. We have teams of highly skilled, reliable and ethical assessors and technical experts, whose skills and abilities are continually assessed.",
+          text: "We operate with the utmost competence and trust, delivering the highest quality service at global and local levels. {Transparency}, {independence} and {integrity} are key to delivering our services. We comply with the highest standards to support maintaining your accreditations, so you can be sure of our competence. We have teams of highly skilled, reliable and ethical assessors and technical experts, whose skills and abilities are continually assessed.",
         },
         {
           id: "CTAS_2.5",
@@ -255,19 +255,19 @@ const CertificationsTrainingAndAdvisoryServices: WhatWeDoType = {
           subtexts: [
             {
               id: "CTAS_2.5.1",
-              text: "{Understand the standard} - we can help you to understand the requirements",
+              text: "<strong>Understand the standard</strong> - we can help you to understand the requirements",
             },
             {
               id: "CTAS_2.5.2",
-              text: "{Get in touch} - tell us what standard you are aiming for, and we will provide a detailed proposal and quote.",
+              text: "<strong>Get in touch</strong> - tell us what standard you are aiming for, and we will provide a detailed proposal and quote.",
             },
             {
               id: "CTAS_2.5.3",
-              text: "{Competence} - identify any skill and competence gaps that your staff may have. We can provide training and workshops to support",
+              text: "<strong>Competence</strong> - identify any skill and competence gaps that your staff may have. We can provide training and workshops to support",
             },
             {
               id: "CTAS_2.5.4",
-              text: "{Gap assessment} - identify any weaknesses",
+              text: "<strong>Gap assessment</strong> - identify any weaknesses",
             },
             {
               id: "CTAS_2.5.5",
@@ -283,11 +283,11 @@ const CertificationsTrainingAndAdvisoryServices: WhatWeDoType = {
             },
             {
               id: "CTAS_2.5.8",
-              text: "{Ongoing improvement} - regular surveillance visits to help you maintain and enhance your management system.",
+              text: "<strong>Ongoing improvement</strong> - regular surveillance visits to help you maintain and enhance your management system.",
             },
             {
               id: "CTAS_2.5.9",
-              text: "{Bespoke learning} - By utilizing your existing audit data or conducting a gap assessment, we can identify issues and develop customized training to eliminate all gaps.",
+              text: "<strong>Bespoke learning</strong> - By utilizing your existing audit data or conducting a gap assessment, we can identify issues and develop customized training to eliminate all gaps.",
             },
           ],
         },
@@ -319,22 +319,22 @@ const CertificationsTrainingAndAdvisoryServices: WhatWeDoType = {
         },
         {
           id: "CTAS_3.6",
-          text: "We offer face-to-face (classroom), virtual (remote, online), eLearning (self-paced) and blended courses, as well as customized training to meet your evolving needs.",
+          text: "We offer {face-to-face (classroom)}, {virtual (remote, online)}, {eLearning (self-paced)} and {blended courses}, as well as {customized training} to meet your evolving needs.",
         },
         {
           id: "CTAS_3.7",
           subtexts: [
             {
               id: "CTAS_3.7.1",
-              text: "{Standards-based training:} We provide training for ISO and other standards for various levels of employees, such as introduction, internal auditor/lead auditor and implementation courses. We also offer other technical training subjects to improve business processes.",
+              text: "<strong>Standards-based training:</strong> We provide training for ISO and other standards for various levels of employees, such as introduction, internal auditor/lead auditor and implementation courses. We also offer other technical training subjects to improve business processes.",
             },
             {
               id: "CTAS_3.7.2",
-              text: "{Industry-based training:} We offer industry-specific workforce development solutions across many areas, including food, Agriculture, Biological etc.",
+              text: "<strong>Industry-based training:</strong> We offer industry-specific workforce development solutions across many areas, including food, Agriculture, Biological etc.",
             },
             {
               id: "CTAS_3.7.3",
-              text: "{Subject area training:} Our training content covers domain knowledge and skills in specific areas, such as sustainability, health and safety, information security, regulatory compliance, personal development and process improvement. <br> People learn in different ways. It makes practical and economic sense to find adaptable, intuitive training solutions that can be customized to meet organizational and individual expectations. Training must focus on relevant and memorable content.",
+              text: "<strong>Subject area training:</strong> Our training content covers domain knowledge and skills in specific areas, such as sustainability, health and safety, information security, regulatory compliance, personal development and process improvement. <br> People learn in different ways. It makes practical and economic sense to find adaptable, intuitive training solutions that can be customized to meet organizational and individual expectations. Training must focus on relevant and memorable content.",
             },
           ],
         },
@@ -378,23 +378,23 @@ const CertificationsTrainingAndAdvisoryServices: WhatWeDoType = {
           subtexts: [
             {
               id: "CTAS_4.6.1",
-              text: "{Growth:} grow and compete in competitive markets",
+              text: "<strong>Growth:</strong> grow and compete in competitive markets",
             },
             {
               id: "CTAS_4.6.2",
-              text: "{Productivity:} be efficient, productive and constantly increase productivity and quality in any process",
+              text: "<strong>Productivity:</strong> be efficient, productive and constantly increase productivity and quality in any process",
             },
             {
               id: "CTAS_4.6.3",
-              text: "{Digitization:} digitize or adopt Industry 4.0 technology",
+              text: "<strong>Digitization:</strong> digitize or adopt Industry 4.0 technology",
             },
             {
               id: "CTAS_4.6.4",
-              text: "{Sustainability:} be sustainable by defining a strategy",
+              text: "<strong>Sustainability:</strong> be sustainable by defining a strategy",
             },
             {
               id: "CTAS_4.6.5",
-              text: "{Supply chain:} understand and customize your supply chain",
+              text: "<strong>Supply chain:</strong> understand and customize your supply chain",
             },
           ],
         },
@@ -482,19 +482,19 @@ const SupplyOfDroneServices: WhatWeDoType = {
         },
         {
           id: "SODS_2.2",
-          text: "{Improved Safety} <br> Supply drones eliminate the need for personnel to handle transportation tasks in hazardous areas. They can access difficult-to-reach locations, reducing the risk of accidents and injuries.",
+          text: "<strong>Improved Safety</strong> <br> Supply drones eliminate the need for personnel to handle transportation tasks in hazardous areas. They can access difficult-to-reach locations, reducing the risk of accidents and injuries.",
         },
         {
           id: "SODS_2.3",
-          text: "{Increased Efficiency} <br> Drones can transport materials faster and more efficiently, reducing downtime and enhancing overall productivity.",
+          text: "<strong>Increased Efficiency</strong> <br> Drones can transport materials faster and more efficiently, reducing downtime and enhancing overall productivity.",
         },
         {
           id: "SODS_2.4",
-          text: "{Cost Savings} <br> Our supply drone service can significantly reduce operating costs associated with traditional transportation method.",
+          text: "<strong>Cost Savings</strong> <br> Our supply drone service can significantly reduce operating costs associated with traditional transportation method.",
         },
         {
           id: "SODS_2.5",
-          text: "{Environmental Benefits} <br> Drones are eco-friendly, emitting fewer greenhouse gases compared to traditional vehicles, and contributing to your company's sustainability goals.",
+          text: "<strong>Environmental Benefits</strong> <br> Drones are eco-friendly, emitting fewer greenhouse gases compared to traditional vehicles, and contributing to your company's sustainability goals.",
         },
       ],
     },
@@ -511,23 +511,23 @@ const SupplyOfDroneServices: WhatWeDoType = {
           subtexts: [
             {
               id: "SODS_3.2.1",
-              text: "{Needs Assessment} <br> A comprehensive analysis of your specific needs and type of operations will be conducted to design a customized solution.",
+              text: "<strong>Needs Assessment</strong> <br> A comprehensive analysis of your specific needs and type of operations will be conducted to design a customized solution.",
             },
             {
               id: "SODS_3.2.2",
-              text: "{Drone Development} <br> We will develop specialized drones equipped with payload capabilities suitable for your operations.",
+              text: "<strong>Drone Development</strong> <br> We will develop specialized drones equipped with payload capabilities suitable for your operations.",
             },
             {
               id: "SODS_3.2.3",
-              text: "{Supply with Operator} <br> Trained operator will be provided for the safe operation and management of the supplied drones.",
+              text: "<strong>Supply with Operator</strong> <br> Trained operator will be provided for the safe operation and management of the supplied drones.",
             },
             {
               id: "SODS_3.2.4",
-              text: "{Trial Period} <br> A trial period will be initiated to test the service and make any necessary adjustments before full-scale deployment.",
+              text: "<strong>Trial Period</strong> <br> A trial period will be initiated to test the service and make any necessary adjustments before full-scale deployment.",
             },
             {
               id: "SODS_3.2.5",
-              text: "{Full Deployment} <br> Upon successful completion of the trial, we will implement the supply drone service across your operations.",
+              text: "<strong>Full Deployment</strong> <br> Upon successful completion of the trial, we will implement the supply drone service across your operations.",
             },
           ],
         },
@@ -626,15 +626,15 @@ const BusinessSupport: WhatWeDoType = {
           subtexts: [
             {
               id: "BS_2.4.1",
-              text: "{Brand audits:} ensure that your brand is correctly represented along the full supply and value chains.",
+              text: "<strong>Brand audits:</strong> ensure that your brand is correctly represented along the full supply and value chains.",
             },
             {
               id: "BS_2.4.2",
-              text: "{Supplier audits:} maintain best practices while minimizing business disruption.",
+              text: "<strong>Supplier audits:</strong> maintain best practices while minimizing business disruption.",
             },
             {
               id: "BS_2.4.3",
-              text: "{Industry/product stewardship audits:} ensure that member companies adhere to your program's benchmarks.",
+              text: "<strong>Industry/product stewardship audits:</strong> ensure that member companies adhere to your program's benchmarks.",
             },
           ],
         },

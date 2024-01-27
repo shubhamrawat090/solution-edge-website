@@ -125,19 +125,19 @@ const ContactUs = () => {
             We ensure Global Standards: Empowering Diverse Markets with Superior
             Assurance.
           </p>
-          <div className="mt-6 mb-6 px-6 flex gap-x-4 relative left-0 xs:left-[20%] sm:left-[30%] md:left-0 text-white text-[0.9rem]">
+          <div className="mt-6 mb-6 px-6 flex gap-x-4 relative ml-0 xs:ml-[20%] sm:ml-[30%] md:ml-0 text-white text-[0.9rem]">
             <HiBuildingOffice2 className="h-6 w-6" />
             <p>SOLUTION EDGE</p>
           </div>
-          <div className="mb-6 px-6 flex gap-x-4 relative left-0 xs:left-[20%] sm:left-[30%] md:left-0 text-white text-[0.9rem]">
+          <div className="mb-6 px-6 flex gap-x-4 relative ml-0 xs:ml-[20%] sm:ml-[30%] md:ml-0 text-white text-[0.9rem]">
             <FaLocationDot className="h-6 w-6" />
             <p>Uttar Pradesh, India</p>
           </div>
-          <div className="mb-6 px-6 flex gap-x-4 relative left-0 xs:left-[20%] sm:left-[30%] md:left-0 text-white text-[0.9rem]">
+          <div className="mb-6 px-6 flex gap-x-4 relative ml-0 xs:ml-[20%] sm:ml-[30%] md:ml-0 text-white text-[0.9rem]">
             <FaPhone className="h-6 w-6" />
             <p>+918800556980</p>
           </div>
-          <div className="mb-6 px-6 flex gap-x-4 relative left-0 xs:left-[20%] sm:left-[30%] md:left-0 text-white text-[0.9rem]">
+          <div className="mb-6 px-6 flex gap-x-4 relative ml-0 xs:ml-[20%] sm:ml-[30%] md:ml-0 text-white text-[0.9rem]">
             <MdEmail className="h-6 w-6" />
             <p className="text-wrap break-all">solution.edge.info@gmail.com</p>
           </div>

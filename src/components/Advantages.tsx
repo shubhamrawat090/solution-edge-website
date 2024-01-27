@@ -1,5 +1,12 @@
 import { advantages } from "../constants/advantages";
 import AdvantageCard from "./AdvantageCard";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Advantages = () => {
   return (
@@ -16,16 +23,29 @@ const Advantages = () => {
           </p>
         </div>
 
-        <div className="grid text-center sm:text-left sm:grid-cols-2 md:grid-cols-3 gap-8 mt-20 place-content-center">
-          {advantages.map((item) => (
-            <AdvantageCard
-              key={item.id}
-              heading={item.heading}
-              text={item.text}
-              icon={item.icon}
-            />
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+          className="w-[70%] sm:w-[80%] md:w-[90%] lg:w-[95%] xl:w-full mx-auto"
+        >
+          <CarouselContent>
+            {advantages.map((item) => (
+              <CarouselItem
+                key={item.id}
+                className="md:basis-1/2 lg:basis-1/3 p-5 mx-auto min-w-[15rem]"
+              >
+                <AdvantageCard
+                  heading={item.heading}
+                  text={item.text}
+                  icon={item.icon}
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="mr-2" />
+          <CarouselNext />
+        </Carousel>
       </div>
     </section>
   );
