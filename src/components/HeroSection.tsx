@@ -41,7 +41,7 @@ const HeroSection = () => {
           Through On-Spot Inspections, Professional Testing, and Certification
           Services.
         </p>
-        <div className="mt-20 flex items-center justify-center gap-x-6">
+        <div className="mt-20 flex flex-col xs:flex-row xs:items-center xs:justify-center gap-6">
           <button
             onClick={() => handleNavigation(navigate, "contact-us")}
             className="transition-all group inline-flex flex-col items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-caribbeangreen-400 text-white hover:bg-caribbeangreen-500"
@@ -56,7 +56,7 @@ const HeroSection = () => {
           </button>
         </div>
 
-        <div className="mt-36 lg:mt-38 flex flex-col gap-10 xs:gap-0 xs:flex-row xs:justify-center">
+        <div className="mt-20 xs:mt-36 lg:mt-38 flex flex-col gap-10 xs:gap-0 xs:flex-row xs:justify-center">
           {subcardContent.map((item, index) => (
             <div key={item.id} className="flex justify-center items-center">
               <div className="flex flex-col justify-center items-center">
