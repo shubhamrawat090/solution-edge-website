@@ -17,7 +17,6 @@ const AdvantageCard = ({ heading, text, icon }: AdvantageCardProps) => {
   ] as React.ComponentType;
 
   if (!SelectedIcon) {
-    console.log(heading, icon);
     return <div>Icon not found</div>; // Handle the case where the icon is not found
   }
 

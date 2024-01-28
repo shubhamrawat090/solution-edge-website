@@ -1,6 +1,6 @@
 import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useContext } from "react";
-import { navlinks } from "../constants/links";
+import { Fragment, useContext, useState } from "react";
+import { navlinkType, navlinks } from "../constants/links";
 import { classNames } from "../utils/stringManipulation";
 import { handleNavigation } from "../services/navigationService";
 import { useNavigate } from "react-router-dom";
@@ -13,6 +13,7 @@ interface NavLinksProps {
 const NavLinks: React.FC<NavLinksProps> = ({ screen }) => {
   const navigate = useNavigate();
   const { isOpen, setIsOpen } = useContext(NavbarContext);
+
   const handleClick = (id: string, to: string) => {
     // Close the mobile navbar and then redirect
     if (isOpen) {
@@ -20,9 +21,21 @@ const NavLinks: React.FC<NavLinksProps> = ({ screen }) => {
     }
     handleNavigation(navigate, id, to);
   };
+
+  const [openListId, setOpenListId] = useState<number | null>(null);
+
+  const handleMenuButtonClick = (navlink: navlinkType) => {
+    // If the clicked menu button is clicked again then it has to be closed
+    if (navlink.id === openListId) {
+      setOpenListId(null);
+    } else {
+      setOpenListId(navlink.id);
+    }
+  };
+
   return (
     <>
-      {navlinks.map((navlink) => (
+      {navlinks.map((navlink: navlinkType) => (
         <div
           className="transition-all cursor-pointer text-center"
           key={navlink.id}
@@ -32,7 +45,10 @@ const NavLinks: React.FC<NavLinksProps> = ({ screen }) => {
             className="select-none inline-block text-left relative"
           >
             <div>
-              <Menu.Button className="inline-flex w-full justify-center items-center rounded-md px-4 text-md text-pure-greys-500 font-medium hover:text-caribbeangreen-200">
+              <Menu.Button
+                className="inline-flex w-full justify-center items-center rounded-md px-4 text-md text-pure-greys-500 font-medium hover:text-caribbeangreen-200"
+                onClick={() => handleMenuButtonClick(navlink)}
+              >
                 {navlink.label}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +56,10 @@ const NavLinks: React.FC<NavLinksProps> = ({ screen }) => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="ml-2 -mr-1 h-5 w-5"
+                  className={classNames(
+                    "ml-2 -mr-1 h-5 w-5 transition-transform transform",
+                    `${navlink.id === openListId ? "rotate-180" : ""}`
+                  )}
                 >
                   <path
                     strokeLinecap="round"

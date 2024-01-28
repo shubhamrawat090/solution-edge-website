@@ -1,12 +1,28 @@
-import { Link, useNavigate } from "react-router-dom";
-import { email } from "../constants/contact-info";
+import { useNavigate } from "react-router-dom";
 import { handleNavigation } from "../services/navigationService";
 
 const HeroSection = () => {
+  const subcardContent = [
+    {
+      id: "heroCard_1",
+      heading: "Quality Commitment",
+      text: "Elevating your standards through collaborative support.",
+    },
+    {
+      id: "heroCard_2",
+      heading: "Your Trusted Partner",
+      text: "Committed to delivering excellence in every service.",
+    },
+    {
+      id: "heroCard_3",
+      heading: "Comprehensive Solutions",
+      text: "Driving your success with our comprehensive approach.",
+    },
+  ];
   const navigate = useNavigate();
   return (
     <main className="min-h-[85vh]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-80 pt-20 text-center lg:pt-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center lg:pt-32">
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-pure-greys-900 sm:text-7xl">
           <span className="relative whitespace-nowrap text-caribbeangreen-400">
             <svg
@@ -25,22 +41,37 @@ const HeroSection = () => {
           Through On-Spot Inspections, Professional Testing, and Certification
           Services.
         </p>
-        <div className="mt-20 flex justify-center gap-x-6">
+        <div className="mt-20 flex items-center justify-center gap-x-6">
           <button
             onClick={() => handleNavigation(navigate, "contact-us")}
-            className="transition-all group inline-flex flex-col items-center justify-center rounded-md py-2 px-4 text-sm focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-caribbeangreen-400 text-white hover:bg-caribbeangreen-500"
+            className="transition-all group inline-flex flex-col items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-caribbeangreen-400 text-white hover:bg-caribbeangreen-500"
           >
-            <div className="font-semibold">CONTACT US</div>
-            <div className="font-normal">Get In Touch</div>
+            <div className="font-semibold">GET IN TOUCH</div>
           </button>
-          <Link
-            to={`mailto:${email}`}
-            target="_blank"
-            className="transition-all group inline-flex flex-col ring-1 items-center justify-center rounded-md py-2 px-4 text-sm focus:outline-none ring-pure-greys-200 text-pure-greys-700 hover:text-pure-greys-900 hover:ring-pure-greys-600 active:bg-pure-greys-25"
+          <button
+            onClick={() => handleNavigation(navigate, "howDoesItWork")}
+            className="transition-all group inline-flex flex-col ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-pure-greys-200 text-pure-greys-700 hover:text-pure-greys-900 hover:ring-pure-greys-600 active:bg-pure-greys-25"
           >
-            <div className="font-semibold">I AM A INSPECTOR COMPANY</div>
-            <div className="font-normal">OR AN INSPECTOR</div>
-          </Link>
+            <div className="font-semibold">HOW IT WORKS</div>
+          </button>
+        </div>
+
+        <div className="mt-36 lg:mt-38 flex flex-col gap-10 xs:gap-0 xs:flex-row xs:justify-center">
+          {subcardContent.map((item, index) => (
+            <div key={item.id} className="flex justify-center items-center">
+              <div className="flex flex-col justify-center items-center">
+                <h3 className="text-base sm:text-xl lg:text-2xl leading-5 font-bold bg-gradient-to-r from-[#4ca56a] to-[#03587d] bg-clip-text text-transparent">
+                  {item.heading}
+                </h3>
+                <p className="text-sm lg:text-base font-medium text-pure-greys-500 mt-2 leading-4 lg:leading-5 max-w-[30ch] text-center">
+                  {item.text}
+                </p>
+              </div>
+              {index < subcardContent.length - 1 && (
+                <div className="hidden xs:block w-[2px] h-[5rem] lg:h-[4rem] bg-[#56b35a] flex-grow-0 flex-shrink-0 mx-5 sm:mx-8 lg:mx-10"></div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </main>

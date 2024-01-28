@@ -16,12 +16,12 @@ export default {
     container: {
       center: true,
       padding: "2rem",
+    },
+    extend: {
       screens: {
         xs: "475px",
         "2xl": "1400px",
       },
-    },
-    extend: {
       colors: {
         white: "#fff",
         black: "#000",
@@ -53,20 +53,6 @@ export default {
           700: "#032833",
           800: "#01212A",
           900: "#001B22",
-        },
-        blue: {
-          5: "#EAF5FF",
-          25: "#B4DAEC",
-          50: "#7EC0D9",
-          100: "#47A5C5",
-          200: "#118AB2",
-          300: "#0F7A9D",
-          400: "#0C6A87",
-          500: "#0A5A72",
-          600: "#074B5D",
-          700: "#053B48",
-          800: "#022B32",
-          900: "#001B1D",
         },
         caribbeangreen: {
           5: "#C1FFFD",

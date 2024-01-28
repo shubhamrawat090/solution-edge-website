@@ -1,4 +1,14 @@
-export const navlinks = [
+export type navlinkType = {
+  id: number;
+  label: string;
+  to: string;
+  links: {
+    id: string;
+    label: string;
+  }[];
+};
+
+export const navlinks: navlinkType[] = [
   {
     id: 1,
     label: "Inspection",

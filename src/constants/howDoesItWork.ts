@@ -2,26 +2,44 @@ export const processSteps = [
   {
     id: 1,
     title: "Step 1",
-    text: "Create your account free of charge",
-    icon: "FaUserCircle",
+    text: "Fill our contact form",
+    icon: "BiMessageSquareEdit",
   },
   {
     id: 2,
     title: "Step 2",
-    text: "Post your request for inspection",
-    icon: "FaClipboardList",
+    text: "Share your needs",
+    icon: "BiCommentDetail",
   },
   {
     id: 3,
     title: "Step 3",
-    text: "View the offers and select the best deal",
-    icon: "FaHandshake",
+    text: "Review tailored offers",
+    icon: "BiListCheck",
   },
   {
     id: 4,
     title: "Step 4",
-    text: "Pay safely online, and view your report",
-    icon: "FaCreditCard",
+    text: "Select best solution",
+    icon: "BiSelectMultiple",
+  },
+  {
+    id: 5,
+    title: "Step 5",
+    text: "Finalize payment terms",
+    icon: "BiMoney",
+  },
+  {
+    id: 6,
+    title: "Step 6",
+    text: "Access detailed reports",
+    icon: "AiFillFileText",
+  },
+  {
+    id: 7,
+    title: "Step 7",
+    text: "Receive ongoing support",
+    icon: "BiSupport",
   },
 ];
 
