@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {isOpen && (
           <div
-            className="lg:hidden h-[88vh] bg-white flex flex-col basis-full items-center gap-16 py-10 text-2xl
+            className="lg:hidden h-[88vh] bg-white flex flex-col basis-full items-center gap-16 py-10 text-2xl hiddenScrollbar overflow-x-hidden overflow-y-auto
           "
           >
             <NavLinks screen={"small"} />
