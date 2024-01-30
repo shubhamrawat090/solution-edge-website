@@ -3,9 +3,9 @@ export const handleNavigation = (
   id: string,
   route: string = "home"
 ) => {
-  // Check if home component exists in the DOM
-  const homeComponent = document.getElementById(route);
-  if (!homeComponent) {
+  // Check if required component exists in the DOM
+  const requiredComponent = document.getElementById(route);
+  if (!requiredComponent) {
     // If home component doesn't exist, redirect to home first
     if (!route.trim() || route === "home") {
       navigate("/");
