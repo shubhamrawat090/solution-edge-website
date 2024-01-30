@@ -1,8 +1,16 @@
 export const handleNavigation = (
   navigate: (arg0: string) => void,
   id: string,
-  route: string = "home"
+  route: string = "home",
+  isOpen: boolean = false,
+  setIsOpen: ((x: boolean) => void) | null = null
 ) => {
+  // Close the navbar if it is open
+  if (isOpen) {
+    if (setIsOpen) {
+      setIsOpen(false);
+    }
+  }
   // Check if required component exists in the DOM
   const requiredComponent = document.getElementById(route);
   if (!requiredComponent) {

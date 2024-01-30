@@ -35,7 +35,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ screen }) => {
           >
             {({ open }) => (
               <>
-                <Menu.Button className="inline-flex w-full justify-center items-center rounded-md px-4 text-md text-pure-greys-500 font-medium hover:text-caribbeangreen-200">
+                <Menu.Button className="hideTouchColor inline-flex w-full justify-center items-center rounded-md px-4 text-md text-pure-greys-500 font-medium hover:text-caribbeangreen-200">
                   {navlink.label}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ screen }) => {
                                   handleClick(menuItem.id, navlink.to)
                                 }
                                 className={classNames(
-                                  "group flex w-full items-center rounded-md px-2 py-2 text-sm",
+                                  "hideTouchColor group flex w-full items-center rounded-md px-2 py-2 text-sm",
                                   `${
                                     active
                                       ? "bg-caribbeangreen-300 text-white"

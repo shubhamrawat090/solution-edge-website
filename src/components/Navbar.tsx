@@ -16,12 +16,17 @@ const Navbar = () => {
   };
 
   return (
-    <header className="mb-10 pt-7 sticky top-0 z-10 bg-white" id="navbar">
+    <header
+      className="mb-10 pt-4 md:pt-7 sticky top-0 z-10 bg-white"
+      id="navbar"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <nav className="flex justify-between flex-wrap md:flex-nowrap">
           <a
-            onClick={() => handleNavigation(navigate, "home")}
-            className="flex items-center space-x-2 cursor-pointer shrink-0"
+            onClick={() =>
+              handleNavigation(navigate, "home", "home", isOpen, setIsOpen)
+            }
+            className="flex items-center space-x-2 cursor-pointer shrink-0 hideTouchColor"
           >
             <img
               src={logoImg}
@@ -36,7 +41,7 @@ const Navbar = () => {
           </div>
 
           <div className="lg:hidden flex text-2xl">
-            <button onClick={toggleNavbar}>
+            <button onClick={toggleNavbar} className="hideTouchColor">
               {isOpen ? <IoMdClose /> : <IoMdMenu />}
             </button>
           </div>
