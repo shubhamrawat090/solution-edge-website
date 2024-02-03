@@ -8,6 +8,7 @@ import { classNames } from "@/utils/stringManipulation";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { contactInfoBgGradient } from "@/constants/colors";
 
 const env = import.meta.env;
 const {
@@ -117,7 +118,12 @@ const ContactUs = () => {
       </div>
 
       <div className="mx-auto mt-12 w-[90%] max-w-5xl p-3 flex flex-col md:flex-row justify-between shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-lg">
-        <div className="md:w-1/3 bg-caribbeangreen-500 pt-6 rounded-lg">
+        <div
+          className={classNames(
+            "md:w-1/3 pt-6 rounded-lg",
+            contactInfoBgGradient
+          )}
+        >
           <h1 className="text-2xl text-white px-6 font-semibold text-center md:text-left">
             Contact Information
           </h1>

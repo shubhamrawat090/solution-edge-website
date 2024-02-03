@@ -9,6 +9,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { classNames } from "@/utils/stringManipulation";
+import { howDoesItWorkBgGradient } from "@/constants/colors";
 
 const HowDoesItWork = () => {
   const navigate = useNavigate();
@@ -17,7 +19,10 @@ const HowDoesItWork = () => {
     <section
       id="howDoesItWork"
       aria-label="Working process explanation"
-      className="relative overflow-hidden bg-caribbeangreen-400 pb-28 pt-20 sm:py-32 min-h-screen"
+      className={classNames(
+        "relative overflow-hidden pb-28 pt-20 sm:py-32 min-h-screen",
+        howDoesItWorkBgGradient
+      )}
     >
       <div className="mx-auto text-center max-w-7xl w-[70%] sm:w-[75%]">
         <h2 className="font-medium text-3xl tracking-tight text-center text-white sm:text-4xl md:text-5xl">
