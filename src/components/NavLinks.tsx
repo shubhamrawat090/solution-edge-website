@@ -1,10 +1,10 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useContext } from "react";
-import { navlinkType, navlinks } from "../constants/links";
-import { classNames } from "../utils/stringManipulation";
-import { handleNavigation } from "../services/navigationService";
+import { navlinkType, navlinks } from "@/constants/links";
+import { classNames } from "@/utils/stringManipulation";
+import { handleNavigation } from "@/services/navigationService";
 import { useNavigate } from "react-router-dom";
-import { NavbarContext } from "../context/NavbarContext";
+import { NavbarContext } from "@/context/NavbarContext";
 
 interface NavLinksProps {
   screen: string;

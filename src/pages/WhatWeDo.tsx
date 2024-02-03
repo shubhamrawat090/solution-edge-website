@@ -3,13 +3,13 @@ import {
   WhatWeDoType,
   getWhatWeDo,
   replaceTextWithSpan,
-} from "../constants/whatWeDo";
+} from "@/constants/whatWeDo";
 import { useEffect, useState } from "react";
-import { classNames } from "../utils/stringManipulation";
-import droneImg1 from "../assets/drone-img-1.webp";
-import droneImg2 from "../assets/drone-img-2.webp";
-import droneImg3 from "../assets/drone-img-3.webp";
-import ContactUs from "../components/ContactUs";
+import { classNames } from "@/utils/stringManipulation";
+import droneImg1 from "@/assets/drone-img-1.webp";
+import droneImg2 from "@/assets/drone-img-2.webp";
+import droneImg3 from "@/assets/drone-img-3.webp";
+import ContactUs from "@/components/ContactUs";
 
 const WhatWeDo = () => {
   const navigate = useNavigate();

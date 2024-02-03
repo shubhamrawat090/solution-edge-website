@@ -4,7 +4,7 @@ import { HiBuildingOffice2 } from "react-icons/hi2";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { classNames } from "../utils/stringManipulation";
+import { classNames } from "@/utils/stringManipulation";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";

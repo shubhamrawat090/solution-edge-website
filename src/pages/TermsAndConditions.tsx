@@ -1,8 +1,8 @@
 import { Disclosure } from "@headlessui/react";
-import { termsArray } from "../constants/termsAndConditions";
+import { termsArray } from "@/constants/termsAndConditions";
 import { FaPlus, FaMinus } from "react-icons/fa";
-import { separateNextline } from "../utils/stringManipulation";
-import ContactUs from "../components/ContactUs";
+import { separateNextline } from "@/utils/stringManipulation";
+import ContactUs from "@/components/ContactUs";
 
 const TermsAndConditions = () => {
   return (

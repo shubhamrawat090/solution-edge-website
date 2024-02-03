@@ -1,9 +1,9 @@
-import logoImg from "../assets/logo.webp";
+import logoImg from "@/assets/logo.webp";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
-import { handleNavigation } from "../services/navigationService";
-import { email } from "../constants/contact-info";
+import { handleNavigation } from "@/services/navigationService";
+import { email } from "@/constants/contact-info";
 
 const Footer = () => {
   const navigate = useNavigate();

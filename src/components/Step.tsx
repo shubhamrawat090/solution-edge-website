@@ -1,4 +1,4 @@
-import * as Icons from "../utils/iconUtils";
+import * as Icons from "@/utils/iconUtils";
 
 interface StepProps {
   title: string;

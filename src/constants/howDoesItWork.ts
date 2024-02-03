@@ -2,7 +2,7 @@ export const processSteps = [
   {
     id: 1,
     title: "Step 1",
-    text: "Fill our contact form",
+    text: "Fill out our contact form",
     icon: "BiMessageSquareEdit",
   },
   {
@@ -14,30 +14,36 @@ export const processSteps = [
   {
     id: 3,
     title: "Step 3",
-    text: "Review tailored offers",
-    icon: "BiListCheck",
+    text: "We'll contact you via email or phone",
+    icon: "BiTimeFive",
   },
   {
     id: 4,
     title: "Step 4",
-    text: "Select best solution",
-    icon: "BiSelectMultiple",
+    text: "Review tailored offers",
+    icon: "BiListCheck",
   },
   {
     id: 5,
     title: "Step 5",
-    text: "Finalize payment terms",
-    icon: "BiMoney",
+    text: "Select the best solution",
+    icon: "BiSelectMultiple",
   },
   {
     id: 6,
     title: "Step 6",
-    text: "Access detailed reports",
-    icon: "AiFillFileText",
+    text: "Finalize payment terms",
+    icon: "BiMoney",
   },
   {
     id: 7,
     title: "Step 7",
+    text: "Access detailed reports",
+    icon: "AiFillFileText",
+  },
+  {
+    id: 8,
+    title: "Step 8",
     text: "Receive ongoing support",
     icon: "BiSupport",
   },

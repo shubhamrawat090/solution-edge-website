@@ -1,5 +1,5 @@
-import { advantages } from "../constants/advantages";
-import AdvantageCard from "./AdvantageCard";
+import { advantages } from "@/constants/advantages";
+import AdvantageCard from "@/components/AdvantageCard";
 import {
   Carousel,
   CarouselContent,

@@ -1,11 +1,11 @@
-import logoImg from "../assets/logo.webp";
+import logoImg from "@/assets/logo.webp";
 import { useNavigate } from "react-router-dom";
-import { handleNavigation } from "../services/navigationService";
+import { handleNavigation } from "@/services/navigationService";
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
-import NavLinks from "./NavLinks";
+import NavLinks from "@/components/NavLinks";
 import { useContext } from "react";
-import { NavbarContext } from "../context/NavbarContext";
+import { NavbarContext } from "@/context/NavbarContext";
 
 const Navbar = () => {
   const navigate = useNavigate();

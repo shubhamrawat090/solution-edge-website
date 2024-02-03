@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { processSteps, heading, subHeading } from "../constants/howDoesItWork";
-import Step from "./Step";
+import { processSteps, heading, subHeading } from "@/constants/howDoesItWork";
+import Step from "@/components/Step";
 import { handleNavigation } from "@/services/navigationService";
 import {
   Carousel,

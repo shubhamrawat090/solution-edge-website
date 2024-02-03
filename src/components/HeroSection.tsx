@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { handleNavigation } from "../services/navigationService";
+import { handleNavigation } from "@/services/navigationService";
 
 const HeroSection = () => {
   const subcardContent = [

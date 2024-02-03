@@ -1,11 +1,11 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
-import TermsAndConditions from "./pages/TermsAndConditions";
-import NotFound from "./pages/NotFound";
-import WhatWeDo from "./pages/WhatWeDo";
-import { NavbarContextProvider } from "./context/NavbarContext";
+import Navbar from "@/components/Navbar";
+import Home from "@/pages/Home";
+import Footer from "@/components/Footer";
+import TermsAndConditions from "@/pages/TermsAndConditions";
+import NotFound from "@/pages/NotFound";
+import WhatWeDo from "@/pages/WhatWeDo";
+import { NavbarContextProvider } from "@/context/NavbarContext";
 
 function App() {
   return (

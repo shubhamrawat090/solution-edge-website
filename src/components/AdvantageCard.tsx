@@ -1,5 +1,5 @@
 import React from "react";
-import * as Icons from "../utils/iconUtils";
+import * as Icons from "@/utils/iconUtils";
 
 interface AdvantageCardProps {
   heading: string;
