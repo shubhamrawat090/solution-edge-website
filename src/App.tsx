@@ -6,6 +6,7 @@ import TermsAndConditions from "@/pages/TermsAndConditions";
 import NotFound from "@/pages/NotFound";
 import WhatWeDo from "@/pages/WhatWeDo";
 import { NavbarContextProvider } from "@/context/NavbarContext";
+import WhoWeAreDetailed from "@/pages/WhoWeAreDetailed";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             element={<TermsAndConditions />}
           />
           <Route path="/what-we-do/:type" element={<WhatWeDo />} />
+          <Route path="/who-we-are" element={<WhoWeAreDetailed />} />
         </Routes>
         <Footer />
       </NavbarContextProvider>

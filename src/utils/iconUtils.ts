@@ -1,4 +1,5 @@
 import * as FaIcons from "react-icons/fa";
+import * as Fa6Icons from "react-icons/fa6";
 import * as IoIcons from "react-icons/io";
 import * as BsIcons from "react-icons/bs";
 import * as GiIcons from "react-icons/gi";
@@ -10,6 +11,7 @@ import * as AiIcons from "react-icons/ai";
 
 export {
   FaIcons,
+  Fa6Icons,
   IoIcons,
   BsIcons,
   GiIcons,

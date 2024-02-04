@@ -11,9 +11,9 @@ const Home = () => {
     <div id="home">
       <HeroSection />
       {/* Test Components Start */}
+      <OurCommitmentsForQuality />
       <WhoWeAre />
       <OurWorkings />
-      <OurCommitmentsForQuality />
       {/* Test Components End */}
       <HowDoesItWork />
       <Advantages />

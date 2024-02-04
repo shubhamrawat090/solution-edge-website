@@ -18,9 +18,17 @@ type Card = {
   image?: string;
 };
 
+type NextPrevLink = {
+  title: string;
+  to: string;
+  id: string;
+};
+
 export type WhatWeDoType = {
   id: string;
   heading?: string;
+  prev?: NextPrevLink;
+  next?: NextPrevLink;
   text?: Paragraph[];
   subtopics: Subtopic[];
   cards?: Card[];
@@ -29,6 +37,11 @@ export type WhatWeDoType = {
 const InspectionsAndSupplyChainServices: WhatWeDoType = {
   id: "inspections-and-supply-chain-services",
   heading: "INSPECTIONS AND SUPPLY CHAIN SERVICES",
+  next: {
+    title: "TESTING AND LABORATORY MANAGEMENT SYSTEM SERVICES",
+    to: "what-we-do/testing-and-laboratory-management-system-services",
+    id: "testing-and-laboratory-management-system-services",
+  },
   subtopics: [
     {
       id: "ISC_1",
@@ -119,6 +132,16 @@ const InspectionsAndSupplyChainServices: WhatWeDoType = {
 const TestingAndLaboratoryManagementSystemServices: WhatWeDoType = {
   id: "testing-and-laboratory-management-system-services",
   heading: "TESTING AND LABORATORY MANAGEMENT SYSTEM SERVICES",
+  prev: {
+    title: "INSPECTIONS AND SUPPLY CHAIN SERVICES",
+    to: "what-we-do/inspections-and-supply-chain-services",
+    id: "inspections-and-supply-chain-services",
+  },
+  next: {
+    title: "CERTIFICATIONS, TRAINING AND ADVISORY SERVICES",
+    to: "what-we-do/certifications-training-and-advisory-services",
+    id: "certifications-training-and-advisory-services",
+  },
   subtopics: [
     {
       id: "TAMS_1",
@@ -172,6 +195,16 @@ const TestingAndLaboratoryManagementSystemServices: WhatWeDoType = {
 const CertificationsTrainingAndAdvisoryServices: WhatWeDoType = {
   id: "certifications-training-and-advisory-services",
   heading: "CERTIFICATIONS, TRAINING AND ADVISORY SERVICES",
+  prev: {
+    title: "TESTING AND LABORATORY MANAGEMENT SYSTEM SERVICES",
+    to: "what-we-do/testing-and-laboratory-management-system-services",
+    id: "testing-and-laboratory-management-system-services",
+  },
+  next: {
+    title: "SUPPLY OF DRONE SERVICES",
+    to: "what-we-do/supply-of-drone-services",
+    id: "supply-of-drone-services",
+  },
   subtopics: [
     {
       id: "CTAS_1",
@@ -458,6 +491,16 @@ const CertificationsTrainingAndAdvisoryServices: WhatWeDoType = {
 const SupplyOfDroneServices: WhatWeDoType = {
   id: "supply-of-drone-services",
   heading: "SUPPLY OF DRONE SERVICES",
+  prev: {
+    title: "CERTIFICATIONS, TRAINING AND ADVISORY SERVICES",
+    to: "what-we-do/certifications-training-and-advisory-services",
+    id: "certifications-training-and-advisory-services",
+  },
+  next: {
+    title: "BUSINESS SUPPORT",
+    to: "what-we-do/business-support",
+    id: "business-support",
+  },
   subtopics: [
     {
       id: "SODS_1",
@@ -589,6 +632,11 @@ const SupplyOfDroneServices: WhatWeDoType = {
 const BusinessSupport: WhatWeDoType = {
   id: "business-support",
   heading: "BUSINESS SUPPORT",
+  prev: {
+    title: "SUPPLY OF DRONE SERVICES",
+    to: "what-we-do/supply-of-drone-services",
+    id: "supply-of-drone-services",
+  },
   subtopics: [
     {
       id: "BS_1",

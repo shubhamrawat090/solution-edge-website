@@ -10,6 +10,8 @@ import droneImg1 from "@/assets/drone-img-1.webp";
 import droneImg2 from "@/assets/drone-img-2.webp";
 import droneImg3 from "@/assets/drone-img-3.webp";
 import ContactUs from "@/components/ContactUs";
+import { handleNavigation } from "@/services/navigationService";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 const WhatWeDo = () => {
   const navigate = useNavigate();
@@ -188,6 +190,34 @@ const WhatWeDo = () => {
           </div>
         )}
       </section>
+
+      {/* Next Article Navigation Button */}
+      <div className="mx-auto max-w-7xl my-10 flex flex-col gap-y-5 justify-center sm:justify-start sm:flex-row text-xs sm:text-sm">
+        {data.prev && (
+          <button
+            className="sm:mr-auto flex flex-nowrap justify-center items-center transition-all hover:-translate-y-[0.1rem] underline underline-offset-4"
+            title={`Go to ${data.prev.title}`}
+            onClick={() =>
+              handleNavigation(navigate, data.prev?.id, data.prev?.to)
+            }
+          >
+            <BsArrowLeft className="mr-1" /> {data.prev.title}
+          </button>
+        )}
+
+        {data.next && (
+          <button
+            className="sm:ml-auto flex flex-nowrap justify-center items-center transition-all hover:-translate-y-[0.1rem] underline underline-offset-4"
+            title={`Go to ${data.next.title}`}
+            onClick={() =>
+              handleNavigation(navigate, data.next?.id, data.next?.to)
+            }
+          >
+            {data.next.title} <BsArrowRight className="ml-1" />
+          </button>
+        )}
+      </div>
+
       <ContactUs />
     </>
   );

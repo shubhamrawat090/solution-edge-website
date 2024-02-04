@@ -1,6 +1,6 @@
 export const handleNavigation = (
   navigate: (arg0: string) => void,
-  id: string,
+  id: string = "",
   route: string = "home",
   isOpen: boolean = false,
   setIsOpen: ((x: boolean) => void) | null = null
@@ -22,9 +22,11 @@ export const handleNavigation = (
     }
   }
   // Delay navigation to ensure the home component is rendered before navigating to the child div
-  setTimeout(() => {
-    scrollToElement(id);
-  }, 100); // Adjust the delay time as needed
+  if (id) {
+    setTimeout(() => {
+      scrollToElement(id);
+    }, 100); // Adjust the delay time as needed
+  }
 };
 
 const scrollToElement = (id: string) => {

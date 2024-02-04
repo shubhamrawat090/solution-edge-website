@@ -18,6 +18,9 @@ export default {
       padding: "2rem",
     },
     extend: {
+      transitionProperty: {
+        height: "height",
+      },
       screens: {
         xs: "475px",
         "2xl": "1400px",
