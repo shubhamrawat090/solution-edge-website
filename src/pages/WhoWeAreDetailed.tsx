@@ -4,15 +4,17 @@ import { classNames } from "@/utils/stringManipulation";
 
 const WhoWeAreDetailed = () => {
   const textContainer = "max-w-5xl mx-auto";
-  console.log("REMOVE AFTER EVERYTHING IS FINALLY BUILT");
 
   return (
     <>
       <div className="container mx-auto px-4 py-8" id="who-we-are-detailed">
-        <h1 className="text-4xl font-bold text-center mb-8">
+        <h1 className="text-4xl font-bold text-center">
           Who We Are: S<span className="text-caribbeangreen-400">olution</span>{" "}
           E<span className="text-caribbeangreen-400">dge</span>
         </h1>
+
+        {/* separator */}
+        <div className="h-2 w-12 bg-richblack-25 rounded-lg my-4 mx-auto"></div>
 
         <div
           className={classNames(

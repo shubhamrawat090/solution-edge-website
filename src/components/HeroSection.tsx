@@ -49,10 +49,12 @@ const HeroSection = () => {
             <div className="font-semibold">GET IN TOUCH</div>
           </button>
           <button
-            onClick={() => handleNavigation(navigate, "howDoesItWork")}
+            onClick={() =>
+              handleNavigation(navigate, "ourCommitmentsForQuality")
+            }
             className="transition-all group inline-flex flex-col ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-pure-greys-200 text-pure-greys-700 hover:text-pure-greys-900 hover:ring-pure-greys-600 active:bg-pure-greys-25"
           >
-            <div className="font-semibold">HOW IT WORKS</div>
+            <div className="font-semibold">ABOUT US</div>
           </button>
         </div>
 

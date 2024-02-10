@@ -10,11 +10,9 @@ const Home = () => {
   return (
     <div id="home">
       <HeroSection />
-      {/* Test Components Start */}
       <OurCommitmentsForQuality />
       <WhoWeAre />
       <OurWorkings />
-      {/* Test Components End */}
       <HowDoesItWork />
       <Advantages />
       <ContactUs />
