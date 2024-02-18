@@ -4,6 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import { handleNavigation } from "@/services/navigationService";
 import { email } from "@/constants/contact-info";
+import EasyHaatDownloadBtn from "./EasyHaatDownloadBtn";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const Footer = () => {
               <img src={logoImg} alt="logo" className="h-16" loading="lazy" />
             </a>
           </div>
-          <nav className="mt-10 text-sm" aria-label="quick links">
+          <nav className="mt-5 text-sm" aria-label="quick links">
             <div className="-my-1 flex flex-col sm:flex-row justify-center gap-x-6 gap-y-4">
               <a
                 className="inline-block rounded-lg px-2 py-1 text-sm text-pure-greys-600 hover:bg-pure-greys-10 hover:text-pure-greys-900 cursor-pointer text-center"
@@ -43,6 +44,9 @@ const Footer = () => {
               >
                 Terms and Conditions
               </a>
+            </div>
+            <div className="flex justify-center mt-5">
+              <EasyHaatDownloadBtn />
             </div>
           </nav>
         </div>
