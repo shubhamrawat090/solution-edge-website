@@ -192,7 +192,12 @@ const WhatWeDo = () => {
       </section>
 
       {/* Next Article Navigation Button */}
-      <div className="mx-auto max-w-7xl my-10 flex flex-col gap-y-5 justify-center sm:justify-start sm:flex-row text-xs sm:text-sm">
+      <div
+        className={classNames(
+          "mx-auto my-10 flex flex-col gap-y-5 justify-center sm:justify-start sm:flex-row text-xs sm:text-sm",
+          `${data.cards ? "max-w-7xl" : "max-w-4xl"}` // If cards are available then the buttons should be expanded to cover the above content's width and vice-versa
+        )}
+      >
         {data.prev && (
           <button
             className="sm:mr-auto flex flex-nowrap justify-center items-center transition-all hover:-translate-y-[0.1rem] underline underline-offset-4"
